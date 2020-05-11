@@ -8,5 +8,12 @@
     "editor.insertSpaces": true,
     "editor.formatOnPaste": false,
     "editor.formatOnType": false,
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "files.exclude": {
+        ".eslintcache": true
+    },
+    "search.exclude": {
+        "/coverage": true,
+        "/node_modules": true
+    }
 }
