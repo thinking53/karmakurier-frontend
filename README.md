@@ -3,21 +3,23 @@
 ## Node Setup
 
 * Install nvm: https://github.com/nvm-sh/nvm
+* Optionally, create a default node version for your terminal in `~/.nvmrc`
+* Put this into your `~./bashrc` or `~/.zshrc`:
 
-* Put this into your `bashrc` or `.zshrc`:
-
-```bash
+```sh
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. $NVM_DIR/nvm.sh --no-use # This loads nvm
 [ -s "$HOME/.nvmrc" ] && nvm use # This enables the standard node environment from ~/.nvmrc
 ```
 
 * Restart your terminal
-* Go to this project root:
+* Go to the project root:
 
-```
+```sh
+nvm install --lts=erbium
 nvm use
 ```
+
 
 ## Installation
 
