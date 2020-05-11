@@ -1,5 +1,24 @@
 # karmakurier-frontend
 
+## Node Setup
+
+* Install nvm: https://github.com/nvm-sh/nvm
+
+* Put this into your `bashrc` or `.zshrc`:
+
+```bash
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. $NVM_DIR/nvm.sh --no-use # This loads nvm
+[ -s "$HOME/.nvmrc" ] && nvm use # This enables the standard node environment from ~/.nvmrc
+```
+
+* Restart your terminal
+* Go to this project root:
+
+```
+nvm use
+```
+
 ## Installation
 
 ```
@@ -7,6 +26,9 @@ npm install
 ```
 
 ## Setup Visual Studio Code
+
+* Install at least the recommended extensions from `vscode/extensions.json`.
+* Restart VS Code
 
 
 
