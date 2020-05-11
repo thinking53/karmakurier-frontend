@@ -1,3 +1,18 @@
+# karmakurier-frontend
+
+## Installation
+
+```
+npm install
+```
+
+## Setup Visual Studio Code
+
+
+
+
+# Original CRA docs
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
