@@ -1,0 +1,8 @@
+{
+    // recommended VS Code extensions for this project
+    "recommendations": [
+        "EditorConfig.EditorConfig",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+    ]
+}

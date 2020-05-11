@@ -1,0 +1,19 @@
+{
+    "eslint.enable": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "files.autoSave": "off",
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "window.zoomLevel": 0,
+    "files.exclude": {
+        ".eslintcache": true
+    },
+    "search.exclude": {
+        "/coverage": true,
+        "/node_modules": true
+    }
+}
