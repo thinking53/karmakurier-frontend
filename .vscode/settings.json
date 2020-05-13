@@ -1,8 +1,22 @@
 {
+    // tell the ESLint plugin to run on save
     "eslint.enable": true,
+    "eslint.validate": ["html", "javascript", "javascriptreact"],
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
+    "eslint.workingDirectories": [
+        {
+            "mode": "auto"
+        }
+    ],
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": false
+    },
+    "prettier.disableLanguages": ["javascript", "javascriptreact"],
     "files.autoSave": "off",
     "editor.formatOnSave": true,
     "editor.insertSpaces": true,
