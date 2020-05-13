@@ -16,7 +16,11 @@
     "[javascriptreact]": {
         "editor.formatOnSave": false
     },
+    "stylelint.enable": true,
     "prettier.disableLanguages": ["javascript", "javascriptreact"],
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
     "files.autoSave": "off",
     "editor.formatOnSave": true,
     "editor.insertSpaces": true,
