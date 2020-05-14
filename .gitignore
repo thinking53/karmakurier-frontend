@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 
+# linting
+.eslintcache
+.stylelintcache
+
 # testing
 /coverage
 
