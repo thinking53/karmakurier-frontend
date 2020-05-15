@@ -1,3 +1,7 @@
+@import 'styles/colors.scss';
+
 .footer {
     grid-area: bottom;
+    color: $white;
+    background-color: $royaleBlue;
 }
