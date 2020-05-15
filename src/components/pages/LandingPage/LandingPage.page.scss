@@ -1,0 +1,21 @@
+.landing-page {
+    min-height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 50px 1fr 100px;
+    grid-template-areas:
+        'top top top'
+        'left content right'
+        'bottom bottom bottom';
+
+    .content {
+        grid-area: content;
+    }
+
+    .section {
+        text-align: center;
+        width: 500px;
+        height: 200px;
+    }
+}

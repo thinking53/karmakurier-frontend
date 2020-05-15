@@ -42,6 +42,7 @@
         "max-nesting-depth": 6,
         "property-no-unknown": true,
         "unit-whitelist": [
+            "fr",
             "ch",
             "em",
             "ex",
