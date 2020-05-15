@@ -9,18 +9,12 @@ function LandingPage() {
         <div className="landing-page">
             <Header />
             <div className="content">
-                <div className="section">
-                    <h1>Section </h1>
-                    <p>Lorem Ipsum</p>
-                </div>
-                <div className="section">
-                    <h1>Section </h1>
-                    <p>Lorem Ipsum</p>
-                </div>
-                <div className="section">
-                    <h1>Section </h1>
-                    <p>Lorem Ipsum</p>
-                </div>
+                {[1, 2, 3, 4, 5].map(() => (
+                    <div className="section">
+                        <h1>karmakurier hilft</h1>
+                        <p>Coming soon...</p>
+                    </div>
+                ))}
             </div>
             <LocationIndicator />
             <Footer />
