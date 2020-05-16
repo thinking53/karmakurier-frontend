@@ -27,6 +27,12 @@ nvm use
 npm install
 ```
 
+Create `.env` file in the project root and insert:
+
+```
+SASS_PATH=node_modules:src
+```
+
 ## Setup Visual Studio Code
 
 * Install at least the recommended extensions from `vscode/extensions.json`.
