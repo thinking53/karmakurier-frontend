@@ -4,7 +4,8 @@
     "eslint.validate": ["html", "javascript", "javascriptreact"],
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true,
-        "source.fixAll.stylelint": true
+        "source.fixAll.stylelint": true,
+        "source.organizeImports": true
     },
     "eslint.workingDirectories": [
         {
