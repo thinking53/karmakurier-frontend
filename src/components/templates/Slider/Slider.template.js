@@ -1,14 +1,8 @@
 import React from 'react'
-import LeftSlideButton from '../../atoms/LeftSlideButton/LeftSlideButton.atom'
-import RightSlideButton from '../../atoms/RightSlideButton/RightSlideButton.atom'
 
-function Slider() {
-    return (
-        <div className="slider">
-            <LeftSlideButton />
-            <RightSlideButton />
-        </div>
-    )
+function SliderHeadline(props) {
+    const { headline } = props
+    return <h1 className="slider-headline">{headline}</h1>
 }
 
-export default Slider
+export default SliderHeadline

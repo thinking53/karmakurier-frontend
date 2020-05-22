@@ -1,11 +1,13 @@
 import React from 'react'
+import uuid from 'react-uuid'
 import './LocationIndicator.organism.scss'
 
-function LocationIndicator() {
+const LocationIndicator = ({ sectionCount, activeSection }) => {
+    const sections = parseInt(sectionCount, 10)
     return (
         <div className="location-indicator">
-            {[1, 2, 3].map(() => (
-                <span>&#9675;&nbsp;</span>
+            {[...Array(sections)].map((section, index) => (
+                <span key={uuid()} className={index === activeSection ? 'active' : ''} />
             ))}
         </div>
     )
