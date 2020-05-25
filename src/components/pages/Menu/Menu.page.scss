@@ -1,0 +1,35 @@
+@import 'styles/colors.scss';
+
+.menu {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9000;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    opacity: 0;
+    transition: all 300ms linear;
+
+    &.visible {
+        opacity: 1;
+        background-color: $papaya;
+    }
+
+    .header {
+        grid-area: top;
+        height: 100px;
+    }
+
+    .content {
+        position: sticky;
+        width: 100vw;
+        height: calc(100vh - 100px);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
