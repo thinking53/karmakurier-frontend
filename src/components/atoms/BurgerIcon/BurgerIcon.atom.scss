@@ -34,6 +34,10 @@ $burger-width: 20px;
         transition: 0.4s;
     }
 
+    &:hover > div {
+        background-color: $papaya;
+    }
+
     &.inverted > div {
         background-color: $white;
     }

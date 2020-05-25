@@ -14,9 +14,6 @@ const LandingPage = () => {
         }
     }
 
-    // see: https://github.com/researchgate/react-intersection-observer/blob/master/README.md
-    // see: https://github.com/thebuilder/react-intersection-observer/blob/HEAD/docs/Recipes.md#lazy-image-load
-
     return (
         <MainLayout>
             <InView threshold={threshold} onChange={(inView) => handleViewChange(inView, 0)}>

@@ -5,6 +5,7 @@ import Logo from '../../atoms/Logo/Logo.atom'
 import './Menu.page.scss'
 
 const Menu = ({ visible, close }) => {
+    // keep in sync with routes.js
     const links = [
         {
             path: '/',
@@ -21,14 +22,6 @@ const Menu = ({ visible, close }) => {
         {
             path: '/contact',
             menuEntry: 'Schreib uns',
-        },
-        {
-            path: '/login',
-            menuEntry: 'Helfer Login',
-        },
-        {
-            path: '/register',
-            menuEntry: 'Als Helfer registrieren',
         },
     ]
 
