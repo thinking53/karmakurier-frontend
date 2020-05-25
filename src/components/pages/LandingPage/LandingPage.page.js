@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { InView } from 'react-intersection-observer'
+import Karmakurier from '../../atoms/Karmakurier/Karmakurier.atom'
 import LocationIndicator from '../../organisms/LocationIndicator/LocationIndicator.organism'
 import Chores from '../../templates/Chores/Chores.template'
 import MainLayout from '../../templates/MainLayout/MainLayout.page'
@@ -18,7 +19,9 @@ const LandingPage = () => {
         <MainLayout>
             <InView threshold={threshold} onChange={(inView) => handleViewChange(inView, 0)}>
                 <div className="section">
-                    <h1>Karmakurier hilft bei Besorgungen</h1>
+                    <h1>
+                        <Karmakurier /> hilft bei Besorgungen
+                    </h1>
                     <Chores />
                 </div>
             </InView>
@@ -35,7 +38,7 @@ const LandingPage = () => {
             <InView threshold={threshold} onChange={(inView) => handleViewChange(inView, 3)}>
                 <div className="section">
                     <h1>
-                        Werden Sie Teil von <span className="highlight">karmakurier</span>
+                        Werden Sie Teil von <Karmakurier />
                     </h1>
                 </div>
             </InView>
