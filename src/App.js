@@ -1,9 +1,21 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import slugify from 'slugify'
 import './App.scss'
-import LandingPage from './components/pages/LandingPage/LandingPage.page'
+import { routes } from './routes'
 
-function App() {
-    return <LandingPage />
+const App = () => {
+    return (
+        <Router>
+            <Switch>
+                {routes.map((route) => (
+                    <Route key={slugify(route.path)} path={route.path} exact={route.exact}>
+                        <route.main />
+                    </Route>
+                ))}
+            </Switch>
+        </Router>
+    )
 }
 
 export default App
