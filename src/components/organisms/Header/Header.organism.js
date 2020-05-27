@@ -10,7 +10,7 @@ const Header = () => {
 
     return (
         <div className="header">
-            <Logo inverted={open} />
+            <Logo inverted={open} close={() => setOpen(false)} />
             <div className="actions">
                 <Link to="/login">Anmelden</Link>
                 <Link to="/register">Registrieren</Link>

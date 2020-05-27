@@ -28,7 +28,7 @@ const Menu = ({ visible, close }) => {
     return (
         <div className={visible ? 'menu visible' : 'menu'}>
             <div className="header">
-                <Logo inverted={visible} />
+                <Logo inverted={visible} close={close} />
             </div>
             <div className={visible ? 'menu-content visible' : 'menu-content'}>
                 <ul>
